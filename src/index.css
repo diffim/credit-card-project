@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: hsl(278, 68%, 11%);
+  }
+}
+
+@layer utilities {
+  .specialgradient {
+    background-size: cover;
+    background-image: url("/images/bg-main-desktop.png");
+  }
+  .inputclass {
+    outline: none;
+  }
+  .inputclass:focus {
+    outline-color: #8c38bc;
+    outline-width: 0.5px;
+    outline-style: solid;
+  }
+}
